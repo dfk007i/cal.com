@@ -1,0 +1,11 @@
+name: Codeatlas
+on:
+  push:
+    branches:
+      - main
+jobs:
+  codeatlas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: codeatlasHQ/codebase-visualizer-action@v1-beta
